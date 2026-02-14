@@ -204,3 +204,27 @@ h1 {
     width: 260px;
     height: 260px;
 }
+
+.photo-slider {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 160px;
+}
+
+.photo-slider img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(255, 105, 180, 0.4);
+    opacity: 0;
+    transform: scale(0.85);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.photo-slider img.show {
+    opacity: 1;
+    transform: scale(1);
+}
