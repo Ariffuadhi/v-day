@@ -61,3 +61,59 @@ function toggleMusic() {
         document.getElementById('music-toggle').textContent = '🔊'
     }
 }
+
+const photos = [
+    'music/1.jpeg',
+    'music/2.jpeg',
+    'music/3.jpeg',
+    'music/4.jpeg',
+    'music/5.jpeg',
+    'music/6.jpeg',
+    'music/7.jpeg',
+    'music/8.jpeg',
+    'music/9.jpeg'
+]
+
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1))
+        ;[array[i], array[j]] = [array[j], array[i]]
+    }
+}
+
+shuffle(photos)
+
+let currentIndex = 0
+
+function showNextPhoto() {
+    const img = document.getElementById('slider-photo')
+
+    img.classList.remove('show')
+
+    setTimeout(() => {
+        img.src = photos[currentIndex]
+
+        img.onload = () => {
+            img.classList.add('show')
+            firePhotoConfetti()
+        }
+
+        currentIndex = (currentIndex + 1) % photos.length
+    }, 500)
+}
+
+function firePhotoConfetti() {
+    confetti({
+        particleCount: 50,
+        spread: 60,
+        origin: { y: 0.6 },
+        colors: ['#ff69b4', '#ff1493', '#fff', '#ffdf00']
+    })
+}
+
+window.addEventListener('load', () => {
+    showNextPhoto()
+    setInterval(showNextPhoto, 3500)
+})
+
+
