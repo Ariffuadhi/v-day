@@ -22,7 +22,7 @@ const noMessages = [
 ]
 
 const yesTeasePokes = [
-    "III cepet kali teken Yess, coba teken NOO dulu...  😏",
+    "III cepet kali teken Yess, coba teken NOO dulu atuh adekk...  😏",
     "Coba tes teken NOO duluu... just once 👀",
     "Tekenn NOO duluu atuh adekk, cepet bangett Yes nyaa xixi 😁",
     "click NOO dulu atuhh adekk, I dare you 😏"
