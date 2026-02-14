@@ -11,10 +11,10 @@ const gifStages = [
 
 const noMessages = [
     "NOO",
-    "Are you positive Adekk? 🤔",
-    "Adekk pleasee... 🥺",
-    "If you say no, I will be really sad...",
-    "I will be very sad... 😢",
+    "Adekk beneran nii mau teken NOO? 🤔",
+    "NOO, Adekk pleasee... 🥺",
+    "If you say NOO, Amaass will be really sad...",
+    "AAAA Amaass will be very sad... 😢",
     "Wlee 😜, ga bisa tekan lagii, WLEE !! 🤪",
     "Don't do this to me...",
     "Last chance! 😭",
